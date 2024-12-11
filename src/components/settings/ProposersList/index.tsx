@@ -13,8 +13,6 @@ import { SETTINGS_EVENTS } from '@/services/analytics'
 import { FEATURES } from '@/utils/chains'
 import { Box, Button, Grid, Paper, SvgIcon, Typography } from '@mui/material'
 import EthHashInfo from '@/components/common/EthHashInfo'
-import ExternalLink from '@/components/common/ExternalLink'
-import { HelpCenterArticle } from '@/config/constants'
 import React, { useMemo, useState } from 'react'
 
 const headCells = [
@@ -95,7 +93,7 @@ const ProposersList = () => {
             </Typography>
             <Typography mb={2}>
               Proposers can suggest transactions but cannot approve or execute them. Signers should review and approve
-              transactions first. <ExternalLink href={HelpCenterArticle.PROPOSERS}>Learn more</ExternalLink>
+              transactions first.
             </Typography>
 
             {isEnabled && (

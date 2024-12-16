@@ -18,6 +18,7 @@ const footerPages = [
   AppRoutes.terms,
   AppRoutes.licenses,
 ]
+
 const FooterLink = ({ children, href }: { children: ReactNode; href: string }): ReactElement => {
   return href ? (
     <Link href={href} passHref legacyBehavior>
@@ -27,12 +28,14 @@ const FooterLink = ({ children, href }: { children: ReactNode; href: string }): 
     <MUILink>{children}</MUILink>
   )
 }
+
 const Footer = (): ReactElement | null => {
   const router = useRouter()
 
   if (!footerPages.some((path) => router.pathname.startsWith(path))) {
     return null
   }
+
   const getHref = (path: string): string => {
     return router.pathname === path ? '' : path
   }
@@ -49,11 +52,23 @@ const Footer = (): ReactElement | null => {
         <li>
           <FooterLink href={getHref(AppRoutes.settings.index)}>Preferences</FooterLink>
         </li>
-
         <li>
           <ExternalLink href={HELP_CENTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
             Help
           </ExternalLink>
+        </li>
+        {/* Additional links */}
+        <li>
+          <FooterLink href="https://x.com/chilizx">X</FooterLink>
+        </li>
+        <li>
+          <FooterLink href="https://www.chiliz.com/">Website</FooterLink>
+        </li>
+        <li>
+          <FooterLink href="https://discord.com/invite/chiliz-official-server-841972703651954688">Discord</FooterLink>
+        </li>
+        <li>
+          <FooterLink href="https://docs.chiliz.com/">Docs</FooterLink>
         </li>
         <li>
           <Typography variant="caption">

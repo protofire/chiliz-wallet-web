@@ -27,6 +27,7 @@
 }
 
 .txData {
+  padding-right: 21px;
   border-bottom: 1px solid var(--color-border-light);
 }
 

@@ -26,8 +26,6 @@ const SafeTerms = () => {
 }
 
 const Terms: NextPage = () => {
-  const isOfficialHost = useIsOfficialHost()
-
   return (
     <>
       <Head>

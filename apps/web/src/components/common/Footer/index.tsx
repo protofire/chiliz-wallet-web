@@ -8,6 +8,8 @@ import MUILink from '@mui/material/Link'
 import { HELP_CENTER_URL } from '@/config/constants'
 import ProtofireLogo from '@/public/images/protofire-logo.svg'
 import Link from 'next/link'
+import packageJson from '@/../package.json'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 const footerPages = [
   AppRoutes.welcome.index,

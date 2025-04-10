@@ -1,0 +1,13 @@
+diff --git a/dist/src/utils/eip-3770/config.js b/dist/src/utils/eip-3770/config.js
+index 4937a8edcfb3981d3974d2a0fa9bafdb92cde131..b2ee9dbf3ad015977f5b74f58c95cef6fc6004c0 100644
+--- a/dist/src/utils/eip-3770/config.js
++++ b/dist/src/utils/eip-3770/config.js
+@@ -37,6 +37,8 @@ exports.networks = [
+     { chainId: 82n, shortName: 'meter' },
+     { chainId: 83n, shortName: 'meter-test' },
+     { chainId: 88n, shortName: 'tomo' },
++    { chainId: 88882n, shortName: 'chzspicy' },
++    { chainId: 88888n, shortName: 'chzmainnet' },
+     { chainId: 96n, shortName: 'bkc' },
+     { chainId: 97n, shortName: 'bnbt' },
+     { chainId: 100n, shortName: 'gno' },
